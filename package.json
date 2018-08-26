@@ -1,0 +1,66 @@
+{
+    "name": "weidu-vscode-syntax",
+    "displayName": "WeiDU Language Syntax Support",
+    "description": "WeiDU Language Syntax Support for baf, slb, ssl, tp2, tph, tpp",
+    "version": "0.5.0",
+    "publisher": "weidu.org",
+    "homepage": "https://github.com/WeiDUorg/weidu-vscode-syntax/blob/master/README.md",
+    "icon": "images/weidu_icon.png",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/WeiDUorg/weidu-vscode-syntax.git"
+    },
+    "engines": {
+        "vscode": "^1.2.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "weidu"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "weidu-baf",
+                "aliases": [
+                    "WeiDU-BAF"
+                ],
+                "extensions": [
+                    ".baf",
+                    ".slb",
+                    ".ssl"
+                ]
+            },
+            {
+                "id": "weidu-tp2",
+                "aliases": [
+                    "WeiDU-tp2"
+                ],
+                "extensions": [
+                    ".tp2",
+					".tpa",
+                    ".tph",
+                    ".tpp"
+                ]
+            }
+        ],
+        "grammars": [
+            {
+                "language": "weidu-baf",
+                "scopeName": "source.weidu.baf",
+                "path": "./syntaxes/weidu-baf-slb-ssl.json"
+            },
+            {
+                "language": "weidu-tp2",
+                "scopeName": "source.weidu.tp2",
+                "path": "./syntaxes/weidu-tp2-tpa-tph-tpp.json"
+            }
+        ]
+    },
+    "__metadata": {
+        "id": "e41bba88-0891-49a9-a2cf-eba3b4a88910",
+        "publisherId": "f2e06d04-3010-48bc-a039-3b47231fe7d0",
+        "publisherDisplayName": "WeiDU.org"
+    }
+}
